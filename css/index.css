@@ -87,7 +87,7 @@ p {
  
 /* main styles here starting with banner section*/
 #banner {
-  background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .55)), url(../img/hotel-bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .55)), url(./img/hotel-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
