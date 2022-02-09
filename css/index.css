@@ -197,6 +197,7 @@ p {
 
 .card {
   border: .1rem solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
   margin: 1rem auto;
   background-color: white;
 }
