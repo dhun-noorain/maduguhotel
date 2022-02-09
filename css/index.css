@@ -87,7 +87,7 @@ p {
  
 /* main styles here starting with banner section*/
 #banner {
-  background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .55)), url(../img/hotel-bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .55)), url(./img/hotel-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -174,7 +174,7 @@ p {
 
 /* explore section styles */
 #explore {
-  background-image: linear-gradient(to left, rgba(0,0,0,.25), rgb(0,0,0,.45)), url(../img/bg.png);
+  background-image: linear-gradient(to left, rgba(0,0,0,.25), rgb(0,0,0,.45)), url(./img/bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
