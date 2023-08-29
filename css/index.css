@@ -16,6 +16,13 @@ h4,
 h5,
 h6 {
 	text-transform: capitalize;
+	font-family: 'Kanit', sans-serif;
+}
+
+section h2 {
+	margin: auto;
+	border-bottom: 1px solid red;
+	padding-bottom: 1rem;
 }
 
 a {
@@ -39,6 +46,11 @@ p {
 /* header stylea */
 .header {
 	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0rem 1rem;
+	min-height: 10vh;
 }
 
 .brand-name {
@@ -47,24 +59,51 @@ p {
 
 .brand-title {
 	color: brown;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
+	font-family: 'Bungee Spice', cursive;
 	font-weight: 400;
-	font-family: Georgia, 'Times New Roman', Times, serif;
 	margin-bottom: 0rem;
 }
 
 .brand-msg {
 	font-size: .8rem;
+	font-family: 'Pacifico', cursive;
 	margin-top: 0rem;
 	text-transform: capitalize;
 	color: dimgrey;
 }
 
-#nav-links {
+.mobile-nav {
+	/* border: .125rem solid rgba(0, 0, 0, .45);; */
+	border-radius: .25rem;
+	background-color: white;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	padding: 2.5px 5px;
+}
+
+.nav-toggle {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.nav-toggle span {
+	width: 30px;
+	height: 3px;
+	background-color: black;
+	margin: 3px 0;
+}
+
+.nav-links {
 	list-style: none;
 	margin-top: 0rem;
 	background-color: rgb(255, 255, 255);
 	padding: .5rem;
+	display: none;
 }
 
 .nav-item {
@@ -82,39 +121,6 @@ p {
 	transition: all .3s ease-in-out;
 }
 
-.nav-sm {
-	display: none;
-}
-
-.nav {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-}
-
-#nav-btn {
-	padding: .5rem .25rem;
-}
-
-#nav-btn > div {
-	background-color: rgb(168, 34, 34);
-	width: 50px;
-	height: 7px;
-	margin-top: .25rem;
-	margin-bottom: .25rem;
-	margin-left: auto;
-	margin-right: .5rem;
-}
-
-.hide-nav {
-	display: none;
-	transition: all .3s ease-in-out;
-}
-
-.show-nav {
-	display: block;
-}
-
 /* main styles here starting with banner section*/
 #banner {
 	background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .55)), url(../img/hotel-bg.jpg);
@@ -126,13 +132,18 @@ p {
 }
 
 .welcome-note h2 {
+	font-family: 'Lobster', cursive;
 	font-size: 1.4rem;
 	text-align: center;
 	margin-bottom: 1.5rem;
+	width: 100%;
+	border: none;
+	padding: 0rem;
 }
 
 .welcome-note p {
 	margin-bottom: 1rem;
+	font-family: 'Nunito Sans', sans-serif;
 	text-align: right;
 }
 
@@ -156,10 +167,33 @@ p {
 	font-size: .95rem;
 }
 
-#reserve-form input {
+#reserve-form .input {
 	border: none;
 	border-bottom: .1rem solid rgba(0, 0, 0, .35);
-	margin: .7rem auto;
+	margin-top: 1rem;
+	/* margin-top: 1rem auto; */
+	padding: .5rem .25rem;
+}
+
+#reserve-form .danger {
+	border: .1rem solid red;
+}
+
+.form-section .hidden {
+	display: none;
+}
+
+.form-section .show-error {
+	display: block;
+}
+
+.form-section .error-message {
+	color: red;
+	font-size: 1rem;
+}
+
+#reserve-form input:active {
+	border: none;
 }
 
 #reserve-form label {
@@ -177,15 +211,17 @@ p {
 
 #reserve-form button {
 	background-color: inherit;
-	border: .1rem solid brown;
+	border: .1rem solid rgba(0, 0, 0, .35);
 	border-radius: 5%;
-	color: brown;
+	margin-top: 1rem;
+	padding: .75rem 0rem;
+	color: black;
 	font-weight: 700;
 	transition: all .3s ease-in-out;
 }
 
 #reserve-form button:hover {
-	background-color: brown;
+	background-color: rgba(0, 0, 0, .75);
 	color: white;
 }
 
@@ -202,18 +238,19 @@ p {
 	color: darkolivegreen;
 }
 
+#about p {
+	font-family: 'Nunito Sans', sans-serif;
+}
+
 /* explore section styles */
 #explore {
-	background-image: linear-gradient(to left, rgba(0, 0, 0, .25), rgb(0, 0, 0, .45)), url(../img/bg.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: white;
 	padding: 1rem;
 }
 
 #explore h2 {
 	text-align: center;
-	color: aliceblue;
+	color: black;
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
 }
@@ -238,6 +275,11 @@ p {
 	width: 100%;
 }
 
+.card:hover {
+	box-shadow: -.5rem 1rem .25rem gray;
+	transition: .3s all ease-in-out;
+}
+
 .card-img figcaption {
 	color: rgb(136, 38, 38);
 	margin: 0;
@@ -249,22 +291,19 @@ p {
 }
 
 #contact {
-	background-image: linear-gradient(to left, rgba(0, 0, 0, 0.75), rgb(0, 0, 0, .85)), url(../img/bg.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
 	padding: 1rem;
-	color: white;
+	background-color: white;
+	color: black;
 }
 
 .contact-main {
 	text-align: center;
 }
 
-.contact-main h2 {
-	color: #ffffff;
+#contact h2 {
+	color: black;
 	font-size: 1.4rem;
+	text-align: center;
 	margin-bottom: 1.5rem;
 }
 
@@ -290,10 +329,10 @@ p {
 #contact form textarea {
 	display: block;
 	width: 100%;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	padding: .5rem .25rem;
 	margin-bottom: .75rem;
-        color: #ffffff;
+	border-radius: .2rem;
 }
 
 #contact form button {
@@ -301,13 +340,15 @@ p {
 	display: block;
 	width: 100%;
 	padding: 1rem 0rem;
-	background-color: #ffffff;
+	background-color: white;
+	color: black;
 	transition: all .3s ease-in-out;
+	border: .125px solid gray;
 }
 
 #contact form button:hover {
-	background-color: #1f1e1e;
-	color: #ffffff;
+	background-color: black;
+	color: whitesmoke;
 }
 
 .social-accounts h3 {
