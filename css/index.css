@@ -16,7 +16,8 @@ h4,
 h5,
 h6 {
 	text-transform: capitalize;
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Lobster', cursive;
+	letter-spacing: .2rem;
 }
 
 section h2 {
