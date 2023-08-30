@@ -321,34 +321,40 @@ p {
 	text-align: center;
 }
 
-#contact form {
+#contact .contact-form {
 	display: block;
 }
 
-#contact form input,
-#contact form textarea {
-	display: block;
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
 	width: 100%;
-	font-size: 1rem;
-	padding: .5rem .25rem;
-	margin-bottom: .75rem;
-	border-radius: .2rem;
+	padding: 15px;
+	margin: 5px auto;
+	border: .1rem solid rgba(0, 0, 0, .125);
+	border-radius: 5px;
 }
 
-#contact form button {
-	font-size: 1.25rem;
+.contact-form textarea {
+	resize: vertical;
+}
+
+.contact-form button {
 	display: block;
 	width: 100%;
-	padding: 1rem 0rem;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: black;
+	color: white;
+	border: .1rem solid rgba(0, 0, 0, .125);
+	border-radius: 5px;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+
+.contact-form button:hover {
 	background-color: white;
 	color: black;
-	transition: all .3s ease-in-out;
-	border: .125px solid gray;
-}
-
-#contact form button:hover {
-	background-color: black;
-	color: whitesmoke;
 }
 
 .social-accounts h3 {
