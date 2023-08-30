@@ -330,6 +330,8 @@ p {
 	text-align: center;
 	margin: 1rem auto;
 	font-family: 'Lobster', cursive;
+	letter-spacing: .25rem;
+	font-weight: 200;
 }
 
 .contact-form input[type="text"],
