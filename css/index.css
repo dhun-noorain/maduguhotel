@@ -319,10 +319,16 @@ p {
 #contact .address {
 	margin: 1rem auto;
 	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 #contact .contact-form {
 	display: block;
+}
+
+.contact-form h3 {
+	text-align: center;
+	margin: 1rem auto;
 }
 
 .contact-form input[type="text"],

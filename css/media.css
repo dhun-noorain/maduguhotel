@@ -102,11 +102,11 @@
 	}
 
 	.contact-main,
-	#contact form {
+	#contact .contact-form {
 		flex-basis: 44%;
 	}
 
-	#contact form {
+	#contact .contact-form {
 		width: 85%;
 		margin: 1rem auto;
 	}
