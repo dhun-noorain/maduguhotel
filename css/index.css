@@ -329,6 +329,7 @@ p {
 .contact-form h3 {
 	text-align: center;
 	margin: 1rem auto;
+	font-family: 'Lobster', cursive;
 }
 
 .contact-form input[type="text"],
