@@ -1,8 +1,4 @@
 @media screen and (min-width: 600px) {
-	section h2 {
-		width: 40%;
-	}
-
 	.brand-title {
 		font-size: 1.5rem;
 	}
@@ -34,6 +30,10 @@
 
 	.nav-links li {
 		margin: 10px 0;
+	}
+
+	.contact-form {
+		margin-top: 1.5rem;
 	}
 
 	.footer {
@@ -158,6 +158,17 @@
 	.recent-post {
 		width: 80%;
 		margin: auto auto;
+		text-align: left;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.recent-post .card-footer a {
+		display: inline-block;
+		margin: 1rem auto;
+	}
+
+	.recent-post .card-footer {
+		text-align: center;
 	}
 }
 
