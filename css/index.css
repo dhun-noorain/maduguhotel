@@ -22,8 +22,12 @@ h6 {
 
 section h2 {
 	margin: auto;
-	border-bottom: 1px solid red;
+	color: #800000;
+	font-size: 1.5rem;
+	border-bottom: 1px solid #800000;
 	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+	text-align: center;
 }
 
 a {
@@ -140,6 +144,7 @@ p {
 	width: 100%;
 	border: none;
 	padding: 0rem;
+	color: white;
 }
 
 .welcome-note p {
@@ -232,13 +237,6 @@ p {
 	text-align: center;
 }
 
-#about h2 {
-	font-size: 1.4rem;
-	color: darkgray;
-	margin-bottom: 1rem;
-	color: darkolivegreen;
-}
-
 #about p {
 	font-family: 'Nunito Sans', sans-serif;
 }
@@ -247,13 +245,6 @@ p {
 #explore {
 	background-color: white;
 	padding: 1rem;
-}
-
-#explore h2 {
-	text-align: center;
-	color: black;
-	font-size: 1.5rem;
-	margin-bottom: 1rem;
 }
 
 #explore .card-container {
@@ -299,13 +290,6 @@ p {
 
 .contact-main {
 	text-align: center;
-}
-
-#contact h2 {
-	color: black;
-	font-size: 1.4rem;
-	text-align: center;
-	margin-bottom: 1.5rem;
 }
 
 .contact-main p {
