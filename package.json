@@ -1,0 +1,22 @@
+{
+  "name": "maduguhotel",
+  "version": "1.0.0",
+  "description": "Landing page for a fictional hotel called, Madugu Hotel.\r I wrote this landing page with html 5, css 3 and javascript. It is a responsive landing page!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhun-noorain/maduguhotel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhun-noorain/maduguhotel/issues"
+  },
+  "homepage": "https://github.com/dhun-noorain/maduguhotel#readme",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
