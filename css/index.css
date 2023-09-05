@@ -159,13 +159,19 @@ p {
 	text-align: right;
 }
 
-.form-section #reserve-form {
+.aside-form #reserve-form {
 	max-width: 100%;
 }
 
 #reserve-form {
 	background-color: white;
+	text-align: left;
 	padding: 1rem;
+}
+
+#reserve-form .danger,
+#contact-form .danger {
+	border: .1rem solid red;
 }
 
 #reserve-form input,
@@ -182,24 +188,32 @@ p {
 #reserve-form .input {
 	border: none;
 	border-bottom: .1rem solid rgba(0, 0, 0, .35);
-	margin-top: 1rem;
-	/* margin-top: 1rem auto; */
 	padding: .5rem .25rem;
 }
 
-#reserve-form .danger {
-	border: .1rem solid red;
+#reserve-form .form-section,
+.contact-form .form-section,
+#reserve-form select {
+	margin-bottom: 1rem;
 }
 
-.form-section .hidden {
+#reserve-form .checks {
+	text-align: left;
+}
+
+.aside-form .hidden,
+.contact-form .hidden {
 	display: none;
 }
 
-.form-section .show-error {
+.aside-form .show-error,
+.aside-form .show-msg,
+.contact-form .show-msg {
 	display: block;
 }
 
-.form-section .error-message {
+.aside-form .error-message,
+.contact-form .error-message {
 	color: red;
 	font-size: 1rem;
 }
@@ -210,10 +224,6 @@ p {
 
 #reserve-form label {
 	color: darkgrey;
-}
-
-#reserve-form select {
-	margin-bottom: 1rem;
 }
 
 #reserve-form option {
@@ -316,6 +326,7 @@ p {
 
 #contact .contact-form {
 	display: block;
+	text-align: left;
 }
 
 .contact-form h3 {
