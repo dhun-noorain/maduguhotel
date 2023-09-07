@@ -166,10 +166,31 @@ document.addEventListener("DOMContentLoaded", function() {
    /**
     * hides/display navigation on small screen
     */
-   const navToggle = document.getElementById('navToggle');
-   const navLinks = document.querySelector('.nav-links');
-   
-   navToggle.addEventListener('click', () => {
-     navLinks.classList.toggle('active');
+   $("#navToggle").click(function() {
+      toggleNav();
    });
+
+   /**
+    * hides navigation links after you click a link.
+    * works only when screen is less than 767px. 
+   */ 
+   $(".nav-link").click(function() {
+      if ($(window).width() <= 767) {
+         toggleNav();
+      }
+   });
+
+   // reload page when screen/browser resizes
+   $(window).resize(function() {
+      location.reload(true);
+   });
+
+   // toggling navigation in small screens
+   function toggleNav() {
+      if ($(".nav-links").is(":hidden")) {
+         $(".nav-links").fadeIn();
+      } else {
+         $(".nav-links").fadeOut();
+      }
+   }
 }, false);
