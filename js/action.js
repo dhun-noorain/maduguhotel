@@ -181,9 +181,9 @@ document.addEventListener("DOMContentLoaded", function() {
    });
 
    // reload page when screen/browser resizes
-   $(window).resize(function() {
-      location.reload(true);
-   });
+   // $(window).resize(function() {
+   //    location.reload(true);
+   // });
 
    // toggling navigation in small screens
    function toggleNav() {
